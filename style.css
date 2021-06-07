@@ -1,0 +1,35 @@
+
+/* Style CSS*/
+@font-face {
+    font-family: Raleway;
+    src:   url("font/Raleway/Raleway-VariableFont_wght.ttf"),   
+            url("font/Raleway/static/Raleway-Regular.ttf"),
+            url("font/Raleway/static/Raleway-Bold.ttf"),          
+            url("font/Raleway/static/Raleway-Black.ttf");
+    }
+    
+    
+    .nav { 
+        font-size: 16px;
+        font-family: Raleway, Arial, sans-serif;
+        color: black;
+        list-style: none;
+        display: flex;
+       justify-content: space-evenly;
+       flex-direction:row;
+       width: 400px;
+       border: black;
+       padding: 20px 0;
+       
+    }
+    a:hover{
+        /* ce lien deviendra bleu lorsque celui-ci sera survolé*/
+        color: #0065FC;
+        border-top: 1px solid 
+    }
+    .menu
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
