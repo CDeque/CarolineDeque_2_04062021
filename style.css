@@ -6,18 +6,56 @@ src:      url("font/Raleway/static/Raleway-Regular.ttf"),
         url("font/Raleway/Raleway-VariableFont_wght.ttf"),
         url("font/Raleway/static/Raleway-Black.ttf");
 }
-
-
-.nav { 
-    font-size: 16px;
-    font-family:Raleway, Arial, sans-serif;
+body{
+/* propriètés commune a toutes la page*/
+    font-family:Raleway-Regular,Arial,sans-serif;
+    font-style: normal;
+    font-size: 1rem;
     color: black;
-
-    
+}
+header{
+  display: flex;
+ 
 
 }
+#logo{
+   
+    margin-right: auto;
+    width: 150px    ;
+}
+
+nav ul {
+   list-style: none;
+   display: flex; 
+   
+}
+a{
+    text-decoration: none; 
+   color: black;
+}
 a:hover{
-    /* ce lien deviendra bleu lorsque celui-ci sera survolé*/
     color: #0065FC;
-    border-top-color: #0065FC;
+    border-top: 2px solid;
+   
+    padding: 20px;
+    
+    
+    
+}
+.hebergement{
+display: flex;
+width: 150px;
+
+
+}
+.activité{
+    display: flex;
+    width: 150px;
+ 
+
+}
+.inscription{
+    display: flex;
+    width:150px;
+   
 }
