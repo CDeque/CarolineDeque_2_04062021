@@ -6,56 +6,47 @@ src:      url("font/Raleway/static/Raleway-Regular.ttf"),
         url("font/Raleway/Raleway-VariableFont_wght.ttf"),
         url("font/Raleway/static/Raleway-Black.ttf");
 }
-body{
-/* propriètés commune a toutes la page*/
-    font-family:Raleway-Regular,Arial,sans-serif;
-    font-style: normal;
-    font-size: 1rem;
+body {
+    font-family: "Raleway",Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+  padding: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#logo{ 
+    height: auto;
+    margin: 0;
+    margin-right: auto; 
+}
+.navbar{
+  display: flex;   
+}
+.header-nav {
+    margin: 20px 0; 
+    margin-right: 20px;   
+}
+.header-nav a{
+    padding: 0px 20px;
     color: black;
 }
-header{
-  display: flex;
- 
-
-}
-#logo{
-   
-    margin-right: auto;
-    width: 150px    ;
-}
-
-nav ul {
-   list-style: none;
-   display: flex; 
-   
-}
-a{
-    text-decoration: none; 
-   color: black;
+ a{
+    text-decoration: none;
 }
 a:hover{
+    border-top: 2px solid #0065FC;
     color: #0065FC;
-    border-top: 2px solid;
-   
-    padding: 20px;
-    
-    
-    
+    padding-top: 20px;
 }
-.hebergement{
-display: flex;
-width: 150px;
+.signin{
+    color: #0065FC;
+}
 
+    
 
-}
-.activité{
-    display: flex;
-    width: 150px;
- 
-
-}
-.inscription{
-    display: flex;
-    width:150px;
-   
-}
