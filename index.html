@@ -20,30 +20,30 @@
             <nav class="header-nav">
                     <a href="index.html"title="Hebergement">Hébergement</a>
                     <a href="index.html"title="Activités">Activités</a>
-                    <a href="#"title="S'inscrire" class="signin">S'incrire</a>
+                    <a href="#"title="inscription" class="disabled" style="color: #0065FC;">S'incrire</a>
             </nav>
         </div>
         
 
             <!--Ajout du sous-titre-->
-            <h2>Trouvez votre hebergement pour des vacances de rêve</h2>          
-             <p>En plein centre ville ou en plein nature</p>
+            <h2 class="title">Trouvez votre hebergement pour des vacances de rêve</h2>          
+             <p class="subtitle">En plein centre ville ou en plein nature</p>
 
              <!--Ajout du champs de recherche-->
-             <form>
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search" placeholder="Marseille, France" name="the_search">
-                <button>Rechercher</button>
+             <form class="search">
+                <i class="fas fa-map-marker-alt iconsearch" id="map-marker"></i>
+                <input type="search" placeholder="Marseille, France" name="the_search" class="searchbar">
+                <button class="button">Rechercher</button>
             </form>
 
              <!--Ajout des filtres-->   
-              <div>  
+              <div >  
                   <table>
                     <tr>
-                        <td><i class="fas fa-money-bill-wave"></i>Economique</td>
-                        <td><i class="fas fa-child"></i>Familial</td>
-                        <td><i class="fas fa-heart"></i>Romantique</td>
-                        <td><i class="fas fa-dog"></i>Animaux autorisés</td>
+                        <td class=border-filter><i class="fas fa-money-bill-wave" id="filtercategory"></i>Economique</td>
+                        <td class=border-filter><i class="fas fa-child" id="filtercategory"></i>Familial</td>
+                        <td class=border-filter><i class="fas fa-heart" id="filtercategory"></i>Romantique</td>
+                        <td class=border-filter><i class="fas fa-dog" id="filtercategory"></i>Animaux autorisés</td>
                     </tr>
                 </table>
             </div>
