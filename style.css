@@ -1,4 +1,6 @@
 /* Style CSS*/
+
+/*propriètés par default de la page*/
 @font-face {
 font-family: Raleway;
 src:      url("font/Raleway/static/Raleway-Regular.ttf"),
@@ -15,6 +17,8 @@ body {
 *{
     box-sizing: border-box;
 }
+
+/**************** propriètés du header ****************/
 .header{
   padding: 2px;
   padding-left: 20px;
@@ -59,9 +63,8 @@ a:hover{
 }
 .title{
     /*propriètes du titre*/
-    font-size: 0,5em;
-    font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 .subtitle{
     /*propriètes du sous-titre*/
@@ -175,4 +178,65 @@ border-bottom-right-radius:50px;
     color: #0065FC;
     padding-right: 3px;
     margin-right: 3px;
+}
+p{
+    font-size: 12px;
+}
+
+/**************** propriètés du main ****************/
+
+/*mise en page d'hebergements*/
+section{
+    /*alignement d'hebergement et de populaire*/
+    display: flex;
+}
+h2{
+    /*propriètés de h2*/
+   margin-right: auto;
+   font-size: 16px;
+    
+}
+h3{
+    /*propriètés de h3*/ 
+    10px
+}
+.hebergements{
+    /*propriètés de la section hebergements*/
+    background-color: #F2F2F2;
+   display: flex;
+    justify-content: space-between;
+   position: relative;
+    width:70%;
+    border-radius: 1em 1em 1em 1em;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+
+}
+img{
+    /*propriètés images*/
+    height: 70px;
+    width: 100px;
+    border-radius: 1em 1em 0em 0em;
+    
+    
+}
+article{
+    font-size: 10px;
+
+}
+.fa-star{
+    /*Propriètés étoiles de notation*/
+    color:#0065FC
+}
+
+.populaires{
+     /*Propriètés populaires */
+    background-color: #F2F2F2;
+    display: flex;
+    width:30%;
+    border-radius: 1em 1em 1em 1em;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
 }
