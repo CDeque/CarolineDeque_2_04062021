@@ -19,10 +19,13 @@ body {
 }
 
 /**************** propriètés du header ****************/
+
 .header{
   padding: 2px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: 60px;
+  margin-right: 80px;
 }
 #logo{ 
     height: auto;
@@ -72,13 +75,13 @@ a:hover{
     margin-top: 0px;
 }
 /*propriètes de la barre de recherche*/
+
 .search{
    margin-right: auto;
    margin-bottom: 10px;
     display: flex;
     text-align: center;
     padding: 6px;
-  
     font-family: "Raleway";
 }
 
@@ -90,6 +93,8 @@ a:hover{
 }
 ::placeholder{
     font-family: "Raleway";
+    color:black;
+    
 }
 /*propriètés des filtres*/
 table{
@@ -102,7 +107,10 @@ caption{
     align-items: center;
     font-size: 0.8em;
 }
-
+td:hover{
+    /*effet de survol sur les filtres*/
+    background-color: #DEEBFF;
+}
 .fa-map-marker-alt{
     /*propriètés de l'icone localisation*/
     display: flex;
@@ -186,37 +194,37 @@ p{
 /**************** propriètés du main ****************/
 
 /*mise en page d'hebergements*/
+main{
+    margin-right: 80px;
+    margin-left: 60px;
+}
 section{
     /*alignement d'hebergement et de populaire*/
-    display: flex;
+ display: flex;
 }
 h2{
     /*propriètés de h2*/
-   margin-right: auto;
+    display: block;
    font-size: 16px;
+   margin: 20px;
     
 }
 h3{
     /*propriètés de h3*/ 
-    10px
+    font-size: 10px;
 }
 .hebergements{
     /*propriètés de la section hebergements*/
     background-color: #F2F2F2;
-   display: flex;
-    justify-content: space-between;
-   position: relative;
     width:70%;
     border-radius: 1em 1em 1em 1em;
-    justify-content: space-between;
-    flex-direction: column;
     margin: 20px;
 
 }
 img{
     /*propriètés images*/
-    height: 70px;
-    width: 100px;
+    height: 80px;
+    width: 120px;
     border-radius: 1em 1em 0em 0em;
     
     
@@ -225,11 +233,33 @@ article{
     font-size: 10px;
 
 }
-.fa-star{
-    /*Propriètés étoiles de notation*/
+
+.blue{
+    /*Propriètés étoiles de notation en bleu*/
     color:#0065FC
 }
+.grey{
+    /*etoiles notation grise*/
+    color: #DEEBFF;
+}
+.ligne1{
+    /* propriètes de la ligne 1*/
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;   
+}
+.ligne2{
+    /* propriètes de la ligne 2*/
+    display: flex;
+    margin: 20px;
+}
 
+.location{
+    background-color: white;
+    border-radius: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+}
 .populaires{
      /*Propriètés populaires */
     background-color: #F2F2F2;
