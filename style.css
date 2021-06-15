@@ -25,7 +25,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 60px;
-  margin-right: 80px;
+  margin-right: 60px;
 }
 #logo{ 
     height: auto;
@@ -195,8 +195,10 @@ p{
 
 /*mise en page d'hebergements*/
 main{
-    margin-right: 80px;
+    margin-right: 60px;
     margin-left: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 section{
     /*alignement d'hebergement et de populaire*/
