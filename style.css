@@ -8,10 +8,10 @@ src:      url("font/Raleway/static/Raleway-Regular.ttf"),
         url("font/Raleway/Raleway-VariableFont_wght.ttf"),
         url("font/Raleway/static/Raleway-Black.ttf");
 }
-body {
+body{
     font-family: "Raleway",Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: black;
+    font-size: 16px;
+    color: black; 
     margin: 0;
 }
 *{
@@ -21,28 +21,30 @@ body {
 /**************** propriètés du header ****************/
 
 .header{
-  padding: 2px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
-}
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-right: 240px;
+  }
+
 #logo{ 
-    height: auto;
-    margin: 0;
+    
     margin-right: auto; 
+    display: flex;
+    align-items: center;
+    
 }
 .navbar{
   display: flex;  
+  margin-bottom: 20px;
 }
 .header-nav {
  /*marges menu*/
-    margin: 40px 0; 
-    margin-right: 30px;  
+    margin: 40px 0;  
+    
 }
 .header-nav a{
     /*ecart menu*/
-    padding: 0px 30px;
+    padding: 0px 30px; 
    
    
 }
@@ -56,7 +58,7 @@ a:hover{
     /*effet de survol sur le menu*/
     border-top: 2px solid #0065FC;
     color: #0065FC ;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 .disabled {
     /*propriètés de "s'incrire"-désactivation du lien*/
@@ -66,61 +68,48 @@ a:hover{
 }
 .title{
     /*propriètes du titre*/
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin: 20px 0;
+    font-size: 20px;
+    font-style: bold;
 }
 .subtitle{
     /*propriètes du sous-titre*/
-    padding-top: 5px;
-    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
-/*propriètes de la barre de recherche*/
+/*******************************propriètes de la barre de recherche********************************/
 
 .search{
    margin-right: auto;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
     display: flex;
     text-align: center;
-    padding: 6px;
     font-family: "Raleway";
 }
 
 .searchbar{
-    height: 35px;
+    height: 50px;
     border:solid 1px #F2F2F2;
     font-weight: bold;
+    width: 220px;
 
 }
-::placeholder{
+input{
     font-family: "Raleway";
     color:black;
-    
-}
-/*propriètés des filtres*/
-table{
-    display: flex;
-}
-caption{
-    color: black;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    font-size: 0.8em;
-}
-td:hover{
-    /*effet de survol sur les filtres*/
-    background-color: #DEEBFF;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .fa-map-marker-alt{
     /*propriètés de l'icone localisation*/
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 4px;
     border-radius: 1rem 0rem 0rem 1rem;   
      background: #F2F2F2;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border:solid 0 #F2F2F2;
 }
 
@@ -130,17 +119,39 @@ td:hover{
     font-family: "Raleway";
     background-color: #0065FC;
     border:solid 2px #0065FC;
+    font-size: 16px;
     font-weight: bold;
-    padding: 2px;
     border-radius: 0rem 1rem 1rem 0rem;
     padding: 0rem 1rem 0rem 1rem;
+    text-align: center;
     
 }
-.ecart{
-    border-spacing: 10px;
+/*******************************propriètés des filtres*******************************/
+
+table{
+    display: flex;
+}
+caption{
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 70px;
 }
 
-  
+td:hover{
+    /*effet de survol sur les filtres*/
+    background-color: #DEEBFF;
+}
+tr{
+    width: 70%;
+}
+
+.ecart{
+    width: 70%;
+    border-bottom: 20px;
+}
 
 #filtercategory{
     justify-content: center;
@@ -148,40 +159,29 @@ td:hover{
     border:solid 2px #DEEBFF;
     color: #0065FC;
     background: #DEEBFF;
--moz-border-radius-topleft: 50px;
--moz-border-radius-topright:50px;
--moz-border-radius-bottomleft:50px;
--moz-border-radius-bottomright:50px;
--webkit-border-top-left-radius:50px;
--webkit-border-top-right-radius:50px;
--webkit-border-bottom-left-radius:50px;
--webkit-border-bottom-right-radius:50px;
 border-top-left-radius:50px;
 border-top-right-radius:50px;
 border-bottom-left-radius:50px;
 border-bottom-right-radius:50px;
 }
+
 .border-filter{
-    padding: 0;
+    padding: 5px 10px 5px 0;
     border:solid 2px #F2F2F2;
     font-weight: bold;
--moz-border-radius-topleft: 50px;
--moz-border-radius-topright:50px;
--moz-border-radius-bottomleft:50px;
--moz-border-radius-bottomright:50px;
--webkit-border-top-left-radius:50px;
--webkit-border-top-right-radius:50px;
--webkit-border-bottom-left-radius:50px;
--webkit-border-bottom-right-radius:50px;
 border-top-left-radius:50px;
 border-top-right-radius:50px;
 border-bottom-left-radius:50px;
 border-bottom-right-radius:50px;
 }
+/*******************************ligne Info *******************************/
+
 .info{
     display: flex;
     align-items: center;
+    margin: 20px 0px 10px 0;
 }
+
 .info i{
     color: #0065FC;
     padding-right: 3px;
@@ -191,14 +191,12 @@ p{
     font-size: 12px;
 }
 
-/**************** propriètés du main ****************/
+/******************************* propriètés du main *******************************/
 
 /*mise en page d'hebergements*/
 main{
-    margin-right: 60px;
-    margin-left: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0px 240px;
+   
 }
 section{
     /*alignement d'hebergement et de populaire*/
@@ -220,15 +218,16 @@ h3{
     background-color: #F2F2F2;
     width:70%;
     border-radius: 1em 1em 1em 1em;
-    margin: 20px;
-
+    margin: 0 20px 0 0;
+    padding: 0 20px;
+    
 }
 img{
     /*propriètés images*/
-    height: 80px;
-    width: 120px;
+    height: auto;
+    width: auto;
     border-radius: 1em 1em 0em 0em;
-    
+    padding: 4px;
     
 }
 article{
@@ -253,7 +252,8 @@ article{
 .ligne2{
     /* propriètes de la ligne 2*/
     display: flex;
-    margin: 20px;
+    justify-content: space-between;
+    margin: 20px;   
 }
 
 .location{
@@ -261,6 +261,8 @@ article{
     border-radius: 1em 1em 1em 1em;
     display: flex;
     flex-direction: column;
+    width: 280px;
+    height: 274px;
 }
 .populaires{
      /*Propriètés populaires */
@@ -270,5 +272,9 @@ article{
     border-radius: 1em 1em 1em 1em;
     justify-content: space-between;
     flex-direction: column;
-    margin: 20px;
+    margin: 0 20px;
+    height: auto;
 }
+
+
+
