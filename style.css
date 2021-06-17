@@ -31,6 +31,8 @@ body{
     margin-right: auto; 
     display: flex;
     align-items: center;
+    width: 97px;
+    height: 90px;
     
 }
 .navbar{
@@ -130,6 +132,8 @@ input{
 
 table{
     display: flex;
+    width: 100%;
+    table-layout: fixed;
 }
 caption{
     color: black;
@@ -137,26 +141,33 @@ caption{
     display: flex;
     align-items: center;
     font-size: 16px;
-    width: 70px;
+    width: 100px;
 }
 
 td:hover{
     /*effet de survol sur les filtres*/
     background-color: #DEEBFF;
 }
-tr{
-    width: 70%;
+.filtres{
+    display: flex;
+    
 }
-
-.ecart{
-    width: 70%;
-    border-bottom: 20px;
+ h3.filters{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.categories{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 #filtercategory{
     justify-content: center;
+    margin-right: 10px;
     padding: 5px;
-    border:solid 2px #DEEBFF;
+    border:solid 10px #DEEBFF;
     color: #0065FC;
     background: #DEEBFF;
 border-top-left-radius:50px;
@@ -166,7 +177,9 @@ border-bottom-right-radius:50px;
 }
 
 .border-filter{
-    padding: 5px 10px 5px 0;
+    align-items: center;
+    margin-right: 20px;
+    padding: 0px 10px 0px 0px;
     border:solid 2px #F2F2F2;
     font-weight: bold;
 border-top-left-radius:50px;
@@ -201,6 +214,7 @@ main{
 section{
     /*alignement d'hebergement et de populaire*/
  display: flex;
+
 }
 h2{
     /*propriètés de h2*/
@@ -211,27 +225,33 @@ h2{
 }
 h3{
     /*propriètés de h3*/ 
-    font-size: 10px;
+    font-size: 12px;
 }
 .hebergements{
     /*propriètés de la section hebergements*/
     background-color: #F2F2F2;
     width:70%;
+    max-height: auto;
     border-radius: 1em 1em 1em 1em;
     margin: 0 20px 0 0;
     padding: 0 20px;
+
+    
+    
     
 }
 img{
     /*propriètés images*/
-    height: auto;
-    width: auto;
+
     border-radius: 1em 1em 0em 0em;
     padding: 5px;
-    
+   width: 270px;
+   height: 180px;   
+   margin-left: 5px;
+   
 }
 article{
-    font-size: 10px;
+    font-size: 12px;
 
 }
 
@@ -263,6 +283,13 @@ article{
     flex-direction: column;
     width: 280px;
     height: 274px;
+    padding-top: 5px;
+}   
+.text{
+    align-items: center;
+    padding-left: 15px;
+  
+
 }
 .populaires{
      /*Propriètés populaires */
@@ -275,6 +302,22 @@ article{
     margin: 0 20px;
     height: auto;
 }
-
-
+.entete{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px
+}
+.fa-chart-line{
+padding-right: 10px;
+}
+.location-pop{
+    background-color: white;
+    border-radius: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 274px;
+    padding-top: 5px;
+}
 
