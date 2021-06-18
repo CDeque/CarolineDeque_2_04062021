@@ -138,6 +138,7 @@ input{
 }
 .filtres{
     display: flex;
+    align-items: baseline;
     
 }
  h3.filters{
@@ -209,7 +210,7 @@ h2{
     /*propriètés de h2*/
     display: block;
    font-size: 16px;
-   margin-right: 190px;
+   margin-right: 150px;
    margin-top: 20px;
    margin-bottom: 20px;
     
@@ -226,7 +227,10 @@ h3{
     width:70%;
     border-radius: 2em 2em 2em 2em;
     margin: 0 20px 0 0;
-    padding: 0 20px;    
+    padding: 0 20px;   
+}
+.hebergements h2{
+    font-size: 20px;
 }
 img{
     /*propriètés images*/
@@ -254,13 +258,13 @@ article{
     /* propriètes de la ligne 1*/
     display: flex;
     justify-content: space-between;
-    margin: 20px;   
+    margin: 20px 20px 20px 0;
 }
 .ligne2{
     /* propriètes de la ligne 2*/
     display: flex;
     justify-content: space-between;
-    margin: 20px;   
+    margin: 20px 20px 20px 0;  
 }
 
 .location{
@@ -283,7 +287,7 @@ article{
     display: block;
     font-size: 16px;
     font-weight: bold;
-    margin: 40px 0px 0px 20px ;
+    margin: 40px 0px 0px 0px ;
 }
 /******************************* propriètés de la partie populaire *******************************/
 .populaires{
@@ -296,6 +300,9 @@ article{
     margin: 0 20px;
     height: auto;
     padding: 0px 20px;
+}
+.populaires h2{
+    font-size: 20px;
 }
 .entete{
     display: flex;
