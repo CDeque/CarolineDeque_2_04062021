@@ -204,11 +204,8 @@
         /*alignement d'hebergement et de populaire*/
      margin: 20px;
      width: auto;
+     display: flex;
 
-    }
-    .bloc1{
-        display: flex;
-        justify-content: space-between;
     }
     h2{
         /*propriètés de h2*/
@@ -225,17 +222,19 @@
         background-color: #F2F2F2;
         width: auto;
         border-radius: 2em 2em 2em 2em;
+        object-fit: contain;
+        flex-direction: row;
     }
     .hebergements h2{
         font-size: 20px;
     }
     img{
         /*propriètés images*/
-    
+        display: block;
         border-radius: 2em 2em 0em 0em;
         padding: 5px;
        width: 100%;
-       height: 40%;    
+     height: 50%;
        object-fit: cover;
     }
     article{
@@ -250,25 +249,20 @@
         /*etoiles notation grise*/
         color: #DEEBFF;
     }
-    .ligne1{ 
+    .ligne1, .ligne2{ 
         /* propriètes de la ligne 1*/
         display: flex;
         justify-content: space-between;
         margin: 20px;
+        height: 18em;
+
     }
-    .ligne2{
-         /*propriètes de la ligne 2*/
-        display: flex;
-        justify-content: space-between;
-        margin: 20px; 
-        
-    }
-    
     .location{
         /*proprietes ducadre blanc*/
         background-color: white;
         border-radius: 2em 2em 2em 2em;
         width: 30%;
+       
     }   
     .text{
         /*alignement legende des hotels*/
@@ -287,10 +281,10 @@
          /*Propriètés populaires */
         background-color: #F2F2F2;
         display: flex;
+        justify-content: space-between;
         border-radius: 2em 2em 2em 2em;
         flex-direction: column;
         margin: 0 20px;
-        height: auto;
         padding: 0px 20px;
     }
     .populaires h2{
