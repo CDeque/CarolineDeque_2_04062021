@@ -21,7 +21,6 @@ body {
 main {
   margin: 0 20px;
 }
-
 /**************** propriètés du header ****************/
 
 .header {
@@ -56,7 +55,7 @@ a {
   text-decoration: none;
   color: black;
 }
-a:hover {
+.header-nav a:hover {
   /*effet de survol sur le menu*/
   border-top: 2px solid #0065fc;
   color: #0065fc;
@@ -144,6 +143,11 @@ h3.filters {
   align-items: center;
   width: 100%;
 }
+.name{
+  margin: 20px;
+  display: flex;
+  width: auto;
+}
 
 .filtercategory {
   justify-content: center;
@@ -215,6 +219,7 @@ h3 {
   border-radius: 2em 2em 2em 2em;
   object-fit: contain;
   width: 70%;
+  margin-right: 20px;
 }
 .hebergements h2 {
   font-size: 20px;
@@ -265,16 +270,16 @@ article {
 /******************************* propriètés de la partie populaire *******************************/
 .container-2{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   margin: 10px;
   padding: 10px;
+  height: 38em;
 }
 .populaires {
   /*Propriètés populaires */
   background-color: #f2f2f2;
   border-radius: 2em 2em 2em 2em;
-  margin: 0 20px;
   padding: 0px 20px;
   width: 30%;
 }
@@ -344,16 +349,14 @@ article {
   flex-direction: column;
   justify-content: space-between;
   width: 22%;
-  height: 70%;
+  height: 60%;
 }
 
 .petitformat {
-  display: flex;
-  flex-direction: column;
   border-radius: 2em;
   font-weight: bold;
   height: 45%;
-  padding-bottom: 7px;
+
 }
 .petitformat img {
   height: 80%;
@@ -363,7 +366,7 @@ article {
 .grandformat {
   width: 22%;
   border-radius: 2em;
-  height: 70%;
+  height: 60%;
   font-weight: bold;
 }
 .grandformat img {
