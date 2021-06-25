@@ -1,5 +1,5 @@
 /*** Résolition pour Iphone8 ***/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px)and (max-width:600px) {
   body main{
     margin: 0;
   }
@@ -15,16 +15,17 @@
       width: 100%;
     }
     .logo{
-        order: -2;
+    order: 1;
       
        
     }
     .signin {
-        order: -1;
+        order: 2;
     }
     .header-nav{
    display: flex;
     width: 100%;
+    order: 3;
     
 }
  .header-nav a {
@@ -36,6 +37,10 @@
     border-top: none;
     border-bottom: 2px solid #0065FC;
     padding-bottom: 10px;
+}
+.logo .signin{
+    display: flex;
+    flex-direction: row;
 }
 
 /*** mise en place icone rechercher ***/
@@ -83,7 +88,6 @@ section{
     margin: 0;
 }
 .hebergements{
-    order: -1;
     width: 100%;
     background-color: white;
     border-radius: 0;
