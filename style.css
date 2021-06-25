@@ -42,7 +42,7 @@ main {
   height: 90px;
   object-fit: contain;
   margin-left: 0px;
-  order: 1;
+ 
 }
  .navbar {
   display: flex;
@@ -52,7 +52,7 @@ main {
 .header-nav {
   /*marges menu*/
   margin: 40px 0;
-  order: 2;
+ 
 }
 .header-nav a {
   /*ecart menu*/
@@ -73,7 +73,7 @@ a {
  color: #0065FC;
  display: flex;
  align-items: center;
- order: 3;
+ 
 
 }
 .disabled {
@@ -139,6 +139,9 @@ input {
   border-radius: 0rem 1rem 1rem 0rem;
   padding: 0rem 1rem 0rem 1rem;
   text-align: center;
+}
+.button_icon{
+  display: none;
 }
 /*******************************propriètés des filtres*******************************/
 
