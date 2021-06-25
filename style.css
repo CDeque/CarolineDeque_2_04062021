@@ -8,12 +8,17 @@
     url("font/Raleway/Raleway-VariableFont_wght.ttf"),
     url("font/Raleway/static/Raleway-Black.ttf");
 }
+html{
+  width: 100%;
+}
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: black;
   margin: 0;
   text-decoration: none;
+  height: 100%;
+
 }
 * {
   box-sizing: border-box;
@@ -29,7 +34,7 @@ main {
   margin-right: 20px;
 }
 
-#logo {
+.logo{
   margin-right: auto;
   display: flex;
   align-items: center;
@@ -37,14 +42,17 @@ main {
   height: 90px;
   object-fit: contain;
   margin-left: 0px;
+  order: 1;
 }
-.navbar {
+ .navbar {
   display: flex;
+  align-items: center;
   margin-bottom: 20px;
 }
 .header-nav {
   /*marges menu*/
   margin: 40px 0;
+  order: 2;
 }
 .header-nav a {
   /*ecart menu*/
@@ -59,13 +67,22 @@ a {
   /*effet de survol sur le menu*/
   border-top: 2px solid #0065fc;
   color: #0065fc;
-  padding-top: 50px;
+  padding-top: 30px;
+}
+.signin{
+ color: #0065FC;
+ display: flex;
+ align-items: center;
+ order: 3;
+
 }
 .disabled {
   /*propriètés de "s'incrire"-désactivation du lien*/
   pointer-events: none;
   cursor: default;
   font-weight: bold;
+  color: #0065FC;
+  
 }
 .title {
   /*propriètes du titre*/
@@ -285,6 +302,7 @@ article {
 }
 .populaires h2 {
   font-size: 20px;
+  padding-left: 20px;
 }
 .entete {
   display: flex;
@@ -293,7 +311,7 @@ article {
 }
 .fa-chart-line {
   /*proprietes de l'icone graph*/
-  padding-right: 10px;
+  padding-right: 20px;
 }
 .location-pop {
   /*proprietes de la partie populaire*/
@@ -330,7 +348,7 @@ article {
   display: flex;
   flex-direction: column;
   margin: 0px 20px;
-  height: 38em;
+  height: 40em;
 }
 .titre-activites {
   margin: 0px 0px 20px 0px;
@@ -339,6 +357,7 @@ article {
 .annonces-activites {
   display: flex;
   justify-content: space-between  ;
+  height: 40em;
 
 }
 .annonces-activites img{
@@ -349,7 +368,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   width: 22%;
-  height: 60%;
+  height: 85%;
 }
 
 .petitformat {
@@ -359,18 +378,18 @@ article {
 
 }
 .petitformat img {
-  height: 80%;
+  height: 85%;
   object-fit: cover;
 
 }
 .grandformat {
   width: 22%;
   border-radius: 2em;
-  height: 60%;
+  height: 85%;
   font-weight: bold;
 }
 .grandformat img {
-  height: 90%;
+  height: 85%;
   object-fit: cover;
  
 }
@@ -384,16 +403,20 @@ article {
 }
 
 /******************************* Footer *******************************/
-
-.footer{
+footer{
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer{
   background-color: #f2f2f2;
- flex-direction: row;
+  display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
 .footer-gauche, .footer-centre, .footer-droite{
   padding: 0 20px;
+  width: 30%;
 }
 h4{
   font-size: 14px;
