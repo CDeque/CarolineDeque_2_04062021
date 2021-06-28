@@ -7,24 +7,27 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      margin: 15px; 
+      margin: 0px; 
     }
     .navbar{
-      display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       width: 100%;
     }
     .logo{
-    order: 1;
-      
-       
+    order: 1;  
+    }
+    .logo img{
+        border-radius: 0px;
     }
     .signin {
         order: 2;
+        padding-right: 15px;
     }
     .header-nav{
    display: flex;
     width: 100%;
+    margin: 0px;
     order: 3;
     
 }
@@ -32,18 +35,21 @@
     display: flex;
     justify-content: center;
     width: 50%;
+    border-bottom: 2px solid #F2F2F2;
+    padding: 30px 0px;
 }
 .header-nav a:hover{
     border-top: none;
     border-bottom: 2px solid #0065FC;
-    padding-bottom: 10px;
+    
+    
 }
 .logo .signin{
     display: flex;
     flex-direction: row;
 }
 
-/*** mise en place icone rechercher ***/
+/*** mise en place icone rechercher et ajustement barre de recherche***/
 .button{
     display: none;
 }
@@ -56,7 +62,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -10px;
+    margin-left: -15px;
+}
+.searchbar{
+    width: 70%;
+
 }
 
 /*** filtres ***/

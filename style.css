@@ -13,12 +13,7 @@ html{
 }
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: black;
   margin: 0;
-  text-decoration: none;
-  height: 100%;
-
 }
 * {
   box-sizing: border-box;
@@ -43,7 +38,6 @@ main {
   object-fit: contain;
   margin-left: 0px;
   order: 1;
- 
 }
  .navbar {
   display: flex;
@@ -54,7 +48,6 @@ main {
   /*marges menu*/
   margin: 40px 0;
   order: 2;
- 
 }
 .header-nav a {
   /*ecart menu*/
@@ -76,8 +69,6 @@ a {
  display: flex;
  align-items: center;
  order: 3;
- 
-
 }
 .disabled {
   /*propriètés de "s'incrire"-désactivation du lien*/
@@ -85,7 +76,6 @@ a {
   cursor: default;
   font-weight: bold;
   color: #0065FC;
-  
 }
 .title {
   /*propriètes du titre*/
@@ -105,7 +95,6 @@ a {
   text-align: center;
   font-family: "Raleway";
 }
-
 .searchbar {
   height: 50px;
   border: solid 1px #f2f2f2;
@@ -376,7 +365,6 @@ article {
   width: 22%;
   height: 85%;
 }
-
 .petitformat {
   border-radius: 2em;
   font-weight: bold;
@@ -384,7 +372,7 @@ article {
 
 }
 .petitformat img {
-  height: 85%;
+  height: 80%;
   object-fit: cover;
 
 }
@@ -393,9 +381,10 @@ article {
   border-radius: 2em;
   height: 85%;
   font-weight: bold;
+  object-fit: cover;
 }
 .grandformat img {
-  height: 85%;
+  height: 90%;
   object-fit: cover;
  
 }
