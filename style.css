@@ -349,6 +349,9 @@ article {
   margin: 0px 0px 20px 0px;
   width: 100%;
 }
+.titre-activites h2{
+  font-size: 20px;
+}
 .annonces-activites {
   display: flex;
   justify-content: space-between  ;

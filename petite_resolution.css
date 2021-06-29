@@ -16,13 +16,14 @@
     }
     .logo{
     order: 1;  
+    margin-left: 20px;
     }
     .logo img{
         border-radius: 0px;
     }
     .signin {
         order: 2;
-        padding-right: 15px;
+        margin-right: 20px;
     }
     .header-nav{
    display: flex;
@@ -40,16 +41,22 @@
 }
 .header-nav a:hover{
     border-top: none;
-    border-bottom: 2px solid #0065FC;
-    
-    
+    border-bottom: 2px solid #0065FC;   
 }
 .logo .signin{
     display: flex;
     flex-direction: row;
 }
-
+.title{
+   margin: 0px 20px;
+}
+.subtitle{
+margin: 10px 20px;
+}
 /*** mise en place icone rechercher et ajustement barre de recherche***/
+.search{
+    margin: 10px 20px;
+}
 .button{
     display: none;
 }
@@ -72,18 +79,22 @@
 /*** filtres ***/
 .filtres{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 10px 20px;
 }
 .categories{
 display: flex;
-flex-direction: column;
-align-items: flex-start;
+flex-wrap: wrap;
 }
 .name{
     margin: 10px 0px;
 }
- 
+.border-filter{
+    margin-right: 0px;
+}
+ .info{
+     margin: 0px 20px;
+ }
 /**** mise en place des plus populaires ***/
 section{
     display: flex;
@@ -92,10 +103,11 @@ section{
     margin: 0;
     padding: 0;
 }
-.container{
+.container .container-2{
     display: flex;
-    flex-direction: column;
-    margin: 0;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    padding: 0px 10px;
 }
 .hebergements{
     width: 100%;
@@ -116,6 +128,9 @@ section{
   margin: 0;
   padding: 0;
 }
+.plus{
+    margin: 0px 5px;
+}
 /*** Activités à Marseille ***/
 
 .bloc-activites{
@@ -125,19 +140,33 @@ section{
     width: 100%;
 }
 .annonces-activites{
-flex-direction: column;
+flex-wrap: wrap;
     width: 100%;
+}
+.titre-activites{
+    padding-left: 30px;
+}
+.titre-activites h2{
+    margin: 0px;
 }
 .grandformat{
     width: 100%;
-   
+    margin: 30px;
+   height: 37%;
+}
+.grandformat img{
+   height: 80%;
 }
 .container-activites{
-    width: 100%;
-   
+    width: 100%; 
+    margin: 30px; 
+}
+footer{
+    order: 4;
 }
 .footer{
-    order: -1;
+display: flex;
+flex-direction: column;
 }
 
 
