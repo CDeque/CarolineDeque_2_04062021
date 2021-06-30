@@ -1,6 +1,6 @@
 /*** Résolition pour Iphone8 ***/
 @media screen and (min-width: 320px)and (max-width:600px) {
-  body main{
+  body, main{
     margin: 0;
   }
     .header{
@@ -138,6 +138,7 @@ section{
     margin: 0;
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 .annonces-activites{
 flex-wrap: wrap;
@@ -162,12 +163,15 @@ flex-wrap: wrap;
     margin: 30px; 
 }
 footer{
-    order: 4;
+    
 }
 .footer{
 display: flex;
 flex-direction: column;
 }
-
+.footer-gauche, .footer-centre, .footer-droite{
+    width: 100%;
+    padding: 0px 30px;
+}
 
 }

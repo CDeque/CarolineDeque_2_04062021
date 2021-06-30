@@ -227,7 +227,6 @@ h3 {
 .hebergements {
   /*propriètés de la section hebergements*/
   background-color: #f2f2f2;
-  height: 43em;
   border-radius: 2em 2em 2em 2em;
   object-fit: contain;
   width: 70%;
@@ -286,7 +285,6 @@ article {
   justify-content: space-between;
   margin: 10px;
   padding: 10px;
-  height: 38em;
 }
 .populaires {
   /*Propriètés populaires */
@@ -339,14 +337,7 @@ article {
   margin-top: 50px;
 }
 /******************************* Activités à Marseille *******************************/
-.bloc-activites {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 20px;
-  height: 40em;
-}
 .titre-activites {
-  margin: 0px 0px 20px 0px;
   width: 100%;
 }
 .titre-activites h2{
@@ -354,9 +345,8 @@ article {
 }
 .annonces-activites {
   display: flex;
-  justify-content: space-between  ;
+  justify-content: space-between;
   height: 40em;
-
 }
 .annonces-activites img{
   padding: 0px;
@@ -366,7 +356,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   width: 22%;
-  height: 85%;
+  height: 90%;
 }
 .petitformat {
   border-radius: 2em;
@@ -382,9 +372,8 @@ article {
 .grandformat {
   width: 22%;
   border-radius: 2em;
-  height: 85%;
+  height: 90%;
   font-weight: bold;
-  object-fit: cover;
 }
 .grandformat img {
   height: 90%;
@@ -410,7 +399,6 @@ footer{
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
 }
 .footer-gauche, .footer-centre, .footer-droite{
   padding: 0 20px;
