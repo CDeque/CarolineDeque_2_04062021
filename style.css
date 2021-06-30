@@ -360,7 +360,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   width: 22%;
-  height: 80%;
+  height: 40em;
 }
 .petitformat {
   border-radius: 2em;
@@ -375,10 +375,9 @@ article {
   border-radius: 2em 2em 0em 0em;
 }
 .grandformat {
-  display: flex;
   width: 22%;
   border-radius: 2em;
-  height: 80%;
+  height: 40em;
   font-weight: bold;
 }
 .grandformat img {
