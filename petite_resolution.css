@@ -133,12 +133,10 @@ section{
 }
 /*** Activités à Marseille ***/
 
-.bloc-activites{
+.container-activites{
  
     margin: 0;
-    display: flex;
     width: 100%;
-    flex-wrap: wrap;
 }
 .annonces-activites{
 flex-wrap: wrap;
@@ -157,6 +155,14 @@ flex-wrap: wrap;
 }
 .grandformat img{
    height: 80%;
+}
+.petitformat{
+    width: 100%;
+    margin: 30px;
+    height: 37%;
+}
+.petitformat img{
+    height: 80%;
 }
 .container-activites{
     width: 100%; 

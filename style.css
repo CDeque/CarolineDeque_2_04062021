@@ -236,7 +236,7 @@ h3 {
   font-size: 20px;
   padding-left: 30px;
 }
-img {
+.hebergements img {
   /*propriètés images*/
   display: block;
   border-radius: 2em 2em 0em 0em;
@@ -337,6 +337,10 @@ article {
   margin-top: 50px;
 }
 /******************************* Activités à Marseille *******************************/
+.bloc-activites{
+  display: flex;
+  flex-direction: column;
+}
 .titre-activites {
   width: 100%;
 }
@@ -346,7 +350,7 @@ article {
 .annonces-activites {
   display: flex;
   justify-content: space-between;
-  height: 40em;
+  flex-wrap: wrap;
 }
 .annonces-activites img{
   padding: 0px;
@@ -356,7 +360,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   width: 22%;
-  height: 90%;
+  height: 80%;
 }
 .petitformat {
   border-radius: 2em;
@@ -367,18 +371,21 @@ article {
 .petitformat img {
   height: 80%;
   object-fit: cover;
-
+  width: 100%;
+  border-radius: 2em 2em 0em 0em;
 }
 .grandformat {
+  display: flex;
   width: 22%;
   border-radius: 2em;
-  height: 90%;
+  height: 80%;
   font-weight: bold;
 }
 .grandformat img {
   height: 90%;
   object-fit: cover;
- 
+  width: 100%;
+  border-radius: 2em 2em 0em 0em;
 }
 .titre-photo p{
   justify-content: center;
