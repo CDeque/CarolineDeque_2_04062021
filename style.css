@@ -339,12 +339,13 @@ article {
 /******************************* Activités à Marseille *******************************/
 .bloc-activites{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-.titre-activites {
+#activites {
   width: 100%;
 }
-.titre-activites h2{
+#activites{
   font-size: 20px;
 }
 .annonces-activites {

@@ -1,5 +1,5 @@
 /*** Résolition pour Iphone8 ***/
-@media screen and (min-width: 320px)and (max-width:600px) {
+@media only screen and (min-width: 320px)and (max-width:599px) {
   body, main{
     margin: 0;
   }
@@ -140,34 +140,30 @@ section{
     align-items: center;
     margin: 0;
     width: 100%;
-    height: 44em;
-    justify-content: space-evenly;
+    height: auto;
 }
 .annonces-activites{
     width: 100%;
+    margin: 10px 30px;
 }
-.titre-activites{
-    padding-left: 30px;
-}
-.titre-activites h2{
-    margin: 0px;
+#activites{
+    margin: 0 0 0 30px;
 }
 .grandformat{
     width: 100%;
    height: 16em;
+   margin: 10px 0;
 }
 .grandformat img{
    height: 80%;
 }
 .petitformat{
     width: 100%;
-    height: 37%;
+    height: 16em;
+    margin: 10px 0;
 }
 .petitformat img{
     height: 80%;
-}
-footer{
-    
 }
 .footer{
 display: flex;
@@ -177,5 +173,77 @@ flex-direction: column;
     width: 100%;
     padding: 0px 30px;
 }
+}
+/***Resolution Tablette***/
 
+@media only screen and (min-width:600px) and (max-width:1023px){
+    /***mise en place des filtres ***/
+   .name{
+       margin: 10px 0;
+   }
+   .border-filter{
+       margin: 10px;
+   }
+   /*** Mise en place de Populaires et Hébergements ***/
+   section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   }
+   .container .container-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    padding: 0px 10px;
+   
+}
+   .populaires{
+       order: 1;
+       width: 100%;
+       display: block;
+       flex-direction: column;
+   }
+   .container-2{
+       flex-direction: row;
+   }
+   .location-pop{
+       width: 28em;
+       padding: 5px;
+   }
+   .img-pop{
+       width: 50%;
+
+   }
+   .hebergements{
+       order: 2;
+       width: 100%;
+       margin: 20px 0;   
+   }
+   .location{
+       width: 45%;
+   }
+   /*** mise en forme d'activites à Marseille ***/
+   .container-activites{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 67%;
+       height: 20em;
+   }
+   .petitformat img, .grandformat img{
+    height: 80%;
+    width: 100%;
+   }
+   .petitformat{
+       height: 18em;
+       width: 100%;
+       margin: 10px;
+   }
+   .grandformat{
+    height: 18em;
+    width: 30%;
+    margin-top: 10px;
+   }
 }
