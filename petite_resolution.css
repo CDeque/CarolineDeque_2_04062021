@@ -1,0 +1,255 @@
+/*** Résolition pour mobile ***/
+@media only screen and (max-width: 599px) {
+  body, main{
+    margin: 0;
+   
+  }
+    .header{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0px; 
+    }
+    .navbar{
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .logo{
+    order: 1;  
+    margin-left: 20px;
+    }
+    .logo img{
+        border-radius: 0px;
+    }
+    .signin {
+        order: 2;
+        margin-right: 20px;
+    }
+    .header-nav{
+   display: flex;
+    width: 100%;
+    margin: 0px;
+    order: 3;
+    
+}
+ .header-nav a {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-bottom: 2px solid #F2F2F2;
+    padding: 30px 0px;
+}
+.header-nav a:hover{
+    border-top: none;
+    border-bottom: 2px solid #0065FC;   
+}
+.logo .signin{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+   margin: 0px 20px;
+}
+.subtitle{
+margin: 10px 20px;
+}
+/*** mise en place icone rechercher et ajustement barre de recherche***/
+.search{
+    margin: 10px 20px;
+}
+.button{
+    display: none;
+}
+.button_icon{
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: #0065FC;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
+}
+.searchbar{
+    width: 70%;
+
+}
+
+/*** filtres ***/
+.filtres{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    
+}
+.categories{
+display: flex;
+flex-wrap: wrap;
+}
+.name{
+    margin: 10px 0px;
+}
+.border-filter{
+    margin-right: 0px;
+}
+ .info{
+     margin: 0px 20px;
+ }
+/**** mise en place des plus populaires ***/
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container .container-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+.hebergements{
+    width: 100%;
+    background-color: white;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+.location{
+    width: 100%;
+}
+.populaires{
+    order: -2;
+   width: 100%;
+   background-color: #F2F2F2;
+   border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+.plus{
+    margin: 0px 5px;
+}
+/*** Activités à Marseille ***/
+.bloc-activites{
+    width: 100%;
+    align-items: center;
+}
+.container-activites{
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.annonces-activites{
+    width: 100%;
+    margin: 10px 30px;
+}
+#activites{
+    margin: 0 0 0 30px;
+}
+.grandformat{
+    width: 100%;
+   height: 16em;
+   margin: 10px 0;
+}
+.grandformat img{
+   height: 80%;
+}
+.petitformat{
+    width: 100%;
+    height: 16em;
+    margin: 10px 0;
+}
+.petitformat img{
+    height: 80%;
+}
+.footer{
+display: flex;
+flex-direction: column;
+}
+.footer-gauche, .footer-centre, .footer-droite{
+    width: 100%;
+    padding: 0px 30px;
+}
+}
+/***Resolution Tablette***/
+
+@media only screen and (min-width: 600px) and (max-width: 1023px){
+    /***mise en place des filtres ***/
+    .categories{
+        flex-wrap: wrap;
+    }
+   .name{
+       margin: 10px 0;
+   }
+   .border-filter{
+       margin: 10px;
+   }
+   /*** Mise en place de Populaires et Hébergements ***/
+   section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   }
+   .container .container-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    padding: 0px 10px;
+   width: 100%;
+}
+   .populaires{
+       order: 1;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+   }
+   .container-2{
+       flex-direction: row;
+       width: 100%;
+   }
+   .location-pop{
+       width: 28em;
+       padding: 5px;
+   }
+   .img-pop{
+       width: 50%;
+
+   }
+   .hebergements{
+       order: 2;
+       width: 100%;
+       margin: 20px 0;   
+   }
+   .location{
+       width: 45%;
+   }
+   /*** mise en forme d'activites à Marseille ***/
+   .container-activites{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 67%;
+       height: 20em;
+   }
+   .petitformat img, .grandformat img{
+    height: 80%;
+    width: 100%;
+   }
+   .petitformat{
+       height: 18em;
+       width: 100%;
+       margin: 10px;
+   }
+   .grandformat{
+    height: 18em;
+    width: 30%;
+    margin-top: 10px;
+   }
+}
