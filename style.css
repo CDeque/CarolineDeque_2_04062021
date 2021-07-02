@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 main {
-  margin: 0 20px;
+  margin: 0;
 }
 /**************** propriètés du header ****************/
 
@@ -62,7 +62,7 @@ a {
   /*effet de survol sur le menu*/
   border-top: 2px solid #0065fc;
   color: #0065fc;
-  padding-top: 30px;
+  padding-top: 58px;
 }
 .signin{
  color: #0065FC;
@@ -156,9 +156,10 @@ h3.filters {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 .name{
-  margin: 20px;
+  padding: 20px 0;
   display: flex;
   width: auto;
 }
@@ -178,7 +179,7 @@ h3.filters {
 
 .border-filter {
   align-items: center;
-  margin-right: 70px;
+  margin-right: 50px;
   padding: 0px 20px 0px 0px;
   border: solid 2px #f2f2f2;
   font-weight: bold;
@@ -345,6 +346,7 @@ article {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 100%;
 }
 #activites {
   width: 100%;
@@ -356,6 +358,7 @@ article {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%
 }
 .annonces-activites img{
   padding: 0px;
@@ -365,7 +368,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   width: 22%;
-  height: 40em;
+  height: 30em;
 }
 .petitformat {
   border-radius: 2em;
@@ -374,7 +377,7 @@ article {
 
 }
 .petitformat img {
-  height: 80%;
+  height: 60%;
   object-fit: cover;
   width: 100%;
   border-radius: 2em 2em 0em 0em;
@@ -382,19 +385,19 @@ article {
 .grandformat {
   width: 22%;
   border-radius: 2em;
-  height: 40em;
+  height: 30em;
   font-weight: bold;
 }
 .grandformat img {
-  height: 90%;
+  height: 82%;
   object-fit: cover;
   width: 100%;
   border-radius: 2em 2em 0em 0em;
 }
 .titre-photo p{
-  justify-content: center;
-  position: absolute;
-  margin: 15px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 .grandformat,.petitformat, .location, .location-pop{
   box-shadow: 0px 0px 10px #000;
@@ -414,6 +417,7 @@ footer{
 .footer-gauche, .footer-centre, .footer-droite{
   padding: 0 20px;
   width: 30%;
+  margin: 20px 0;
 }
 h4{
   font-size: 14px;
@@ -426,4 +430,5 @@ ul{
 li{
   list-style-type: none;
   font-size: 14px;
+  padding: 10px 0;
 }
