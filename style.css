@@ -20,6 +20,7 @@ body {
 }
 main {
   margin: 0;
+  padding: 0 30px;
 }
 /**************** propriètés du header ****************/
 
@@ -358,7 +359,8 @@ article {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%
+  width: 100%;
+  padding: 10px 0;
 }
 .annonces-activites img{
   padding: 0px;
@@ -367,7 +369,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 22%;
+  width: 20%;
   height: 30em;
 }
 .petitformat {
@@ -383,7 +385,7 @@ article {
   border-radius: 2em 2em 0em 0em;
 }
 .grandformat {
-  width: 22%;
+  width: 20%;
   border-radius: 2em;
   height: 30em;
   font-weight: bold;
