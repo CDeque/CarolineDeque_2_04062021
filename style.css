@@ -3,10 +3,7 @@
 /*propriètés par default de la page*/
 @font-face {
   font-family: Raleway;
-  src: url("font/Raleway/static/Raleway-Regular.ttf"),
-    url("font/Raleway/static/Raleway-Bold.ttf"),
-    url("font/Raleway/Raleway-VariableFont_wght.ttf"),
-    url("font/Raleway/static/Raleway-Black.ttf");
+  src: url("Fonts/Raleway/static/Raleway-Regular.ttf");
 }
 html{
   width: 100%;
@@ -116,10 +113,10 @@ input {
   justify-content: center;
   align-items: center;
   border-radius: 1rem 0rem 0rem 1rem;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   width: 50px;
   height: 50px;
-  border: solid 0 #f2f2f2;
+  border: solid 0 transparent;
 }
 
 .button {
@@ -127,7 +124,7 @@ input {
   color: white;
   font-family: "Raleway";
   background-color: #0065fc;
-  border: solid 2px #0065fc;
+  border: solid 2px transparent;
   font-size: 16px;
   font-weight: bold;
   border-radius: 0rem 1rem 1rem 0rem;
@@ -169,9 +166,9 @@ h3.filters {
   justify-content: center;
   margin-right: 10px;
   padding: 5px;
-  border: solid 10px #deebff;
+  border: solid 10px transparent;
   color: #0065fc;
-  background: #deebff;
+  background-color: #deebff;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -415,9 +412,9 @@ footer{
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
+  padding: 0 50px;
 }
 .footer-gauche, .footer-centre, .footer-droite{
-  padding: 0 20px;
   width: 30%;
   margin: 20px 0;
 }

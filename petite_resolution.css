@@ -124,6 +124,9 @@ section{
     padding: 0;
     height: auto;
 }
+.plus{
+    margin: 10px 5px;
+}
 .location{
     width: 100%;
 }
@@ -135,9 +138,7 @@ section{
   margin: 0;
   padding: 0;
 }
-.plus{
-    margin: 0px 5px;
-}
+
 /*** Activités à Marseille ***/
 .bloc-activites{
     width: 100%;
@@ -179,10 +180,11 @@ section{
 .footer{
 display: flex;
 flex-direction: column;
+padding: 0 30px;
 }
 .footer-gauche, .footer-centre, .footer-droite{
     width: 100%;
-    padding: 0px 30px;
+    margin: 0px;
 }
 }
 /***Resolution Tablette***/
