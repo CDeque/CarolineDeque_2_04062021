@@ -1,10 +1,6 @@
 /* Style CSS*/
 
 /*propriètés par default de la page*/
-@font-face {
-  font-family: Raleway;
-  src: url("Fonts/Raleway/static/Raleway-Regular.ttf");
-}
 html{
   width: 100%;
 }
@@ -131,6 +127,7 @@ input {
   padding: 0rem 1rem 0rem 1rem;
   text-align: center;
 }
+/*ajout de l'icone du bouton de recherche pour la version mobile*/
 .button_icon{
   display: none;
 }
@@ -193,10 +190,12 @@ h3.filters {
   align-items: center;
 }
 
-.info i {
-  color: #0065fc;
-  padding-right: 3px;
-  margin-right: 3px;
+.info .fas{
+  color:#0065fc;
+  padding: 4px 8px;
+  margin-right: 10px;
+  border: solid 1px #f2f2f2;
+  border-radius: 1rem;
 }
 p {
   font-size: 12px;
@@ -216,8 +215,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 h3 {
   /*propriètés de h3*/
@@ -235,6 +233,7 @@ h3 {
 }
 .hebergements h2 {
   font-size: 20px;
+  padding-top: 10px;
   padding-left: 30px;
 }
 .hebergements img {
@@ -256,7 +255,7 @@ article {
 }
 .grey {
   /*etoiles notation grise*/
-  color: #deebff;
+  color: #f2f2f2;
 }
 .location {
   /*proprietes ducadre blanc*/
@@ -285,8 +284,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 .populaires {
   /*Propriètés populaires */
@@ -298,11 +296,12 @@ article {
 .populaires h2 {
   font-size: 20px;
   padding-left: 20px;
+  padding-top: 10px;
 }
 .entete {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 .fa-chart-line {
   /*proprietes de l'icone graph*/
@@ -317,7 +316,7 @@ article {
   width: 100%;
   height: 15em;
   padding: 5px;
-  margin-bottom: 47px;
+  margin: 10px 0  50px 0;
 }
 .img-pop {
   /*proprietes des images de la partie pop*/
@@ -396,6 +395,7 @@ article {
 .titre-photo p{
   display: flex;
   align-items: center;
+  font-size: 16px;
   padding: 20px;
 }
 .grandformat,.petitformat, .location, .location-pop{
