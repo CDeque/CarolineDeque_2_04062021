@@ -1,7 +1,7 @@
 /* Style CSS*/
 
 /*propriètés par default de la page*/
-html{
+html {
   width: 100%;
 }
 body {
@@ -23,7 +23,7 @@ main {
   margin-right: 20px;
 }
 
-.logo{
+.logo {
   margin-right: auto;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@ main {
   object-fit: contain;
   margin-left: 0px;
 }
- .navbar {
+.navbar {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -56,18 +56,18 @@ a {
   color: #0065fc;
   padding-top: 58px;
 }
-.signin{
- color: #0065FC;
- display: flex;
- align-items: center;
- padding-left: 30px;
+.signin {
+  color: #0065fc;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 .disabled {
   /*propriètés de "s'incrire"-désactivation du lien*/
   pointer-events: none;
   cursor: default;
   font-weight: bold;
-  color: #0065FC;
+  color: #0065fc;
 }
 .title {
   /*propriètes du titre*/
@@ -125,7 +125,7 @@ input {
   text-align: center;
 }
 /*ajout de l'icone du bouton de recherche pour la version mobile*/
-.button_icon{
+.button_icon {
   display: none;
 }
 /*******************************propriètés des filtres*******************************/
@@ -150,7 +150,7 @@ h3.filters {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.name{
+.name {
   padding: 20px 0;
   display: flex;
   width: auto;
@@ -187,8 +187,8 @@ h3.filters {
   align-items: center;
 }
 
-.info .fas{
-  color:#0065fc;
+.info .fas {
+  color: #0065fc;
   padding: 4px 8px;
   margin-right: 10px;
   border: solid 1px #f2f2f2;
@@ -274,12 +274,12 @@ article {
 .plus {
   font-size: 16px;
   font-weight: bold;
-  margin:10px 5px;
+  margin: 10px 5px;
 }
 /******************************* propriètés de la partie populaire *******************************/
-.container-2{
- display: flex;
- flex-wrap: wrap;
+.container-2 {
+  display: flex;
+  flex-direction: column;
   padding: 20px 0px;
 }
 .populaires {
@@ -307,7 +307,7 @@ article {
   width: 100%;
   height: 15em;
   padding: 5px;
-  margin: 10px 0  30px 0;
+  margin: 10px 0 30px 0;
 }
 .img-pop {
   /*proprietes des images de la partie pop*/
@@ -330,7 +330,7 @@ article {
   font-weight: bold;
 }
 /******************************* Activités à Marseille *******************************/
-.bloc-activites{
+.bloc-activites {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -339,7 +339,7 @@ article {
 #activites {
   width: 100%;
 }
-#activites{
+#activites {
   font-size: 20px;
 }
 .annonces-activites {
@@ -349,10 +349,10 @@ article {
   width: 100%;
   padding: 10px 0;
 }
-.annonces-activites img{
+.annonces-activites img {
   padding: 0px;
 }
-.container-activites{
+.container-activites {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -363,7 +363,6 @@ article {
   border-radius: 2em;
   font-weight: bold;
   height: 45%;
-
 }
 .petitformat img {
   height: 60%;
@@ -383,41 +382,46 @@ article {
   width: 100%;
   border-radius: 2em 2em 0em 0em;
 }
-.titre-photo p{
+.titre-photo p {
   display: flex;
   align-items: center;
   font-size: 16px;
   padding: 20px;
 }
-.grandformat,.petitformat, .location, .location-pop{
+.grandformat,
+.petitformat,
+.location,
+.location-pop {
   box-shadow: 0px 0px 10px #000;
 }
 
 /******************************* Footer *******************************/
-footer{
+footer {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.footer{
+.footer {
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
 }
-.footer-gauche, .footer-centre, .footer-droite{
+.footer-gauche,
+.footer-centre,
+.footer-droite {
   width: 30%;
   margin: 20px 0;
 }
-h4{
+h4 {
   font-size: 14px;
   font-weight: bold;
 }
-ul{
+ul {
   align-items: flex-start;
   padding: 0;
 }
-li{
+li {
   list-style-type: none;
   font-size: 14px;
   padding: 10px 0;
