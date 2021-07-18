@@ -31,7 +31,6 @@ main {
   height: 90px;
   object-fit: contain;
   margin-left: 0px;
-  order: 1;
 }
  .navbar {
   display: flex;
@@ -41,7 +40,6 @@ main {
 .header-nav {
   /*marges menu*/
   margin: 40px 0;
-  order: 2;
 }
 .header-nav a {
   /*ecart menu*/
@@ -62,7 +60,6 @@ a {
  color: #0065FC;
  display: flex;
  align-items: center;
- order: 3;
  padding-left: 30px;
 }
 .disabled {
@@ -227,7 +224,7 @@ h3 {
   /*propriètés de la section hebergements*/
   background-color: #f2f2f2;
   border-radius: 2em 2em 2em 2em;
-  object-fit: contain;
+  object-fit: cover;
   width: 70%;
   margin-right: 20px;
 }
@@ -258,7 +255,7 @@ article {
   color: #f2f2f2;
 }
 .location {
-  /*proprietes ducadre blanc*/
+  /*proprietes du cadre blanc*/
   background-color: white;
   border-radius: 2em 2em 2em 2em;
   width: 30%;
@@ -266,7 +263,7 @@ article {
   margin: 10px;
 }
 .text {
-  /*alignement legende des hotels*/
+  /*alignement legendes des hotels*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -277,35 +274,29 @@ article {
 .plus {
   font-size: 16px;
   font-weight: bold;
-  margin: 20px;
+  margin:10px 5px;
 }
 /******************************* propriètés de la partie populaire *******************************/
 .container-2{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
+ display: flex;
+ flex-wrap: wrap;
+  padding: 20px 0px;
 }
 .populaires {
   /*Propriètés populaires */
   background-color: #f2f2f2;
   border-radius: 2em 2em 2em 2em;
-  padding: 0px 20px;
+  padding: 0px 30px;
   width: 30%;
 }
 .populaires h2 {
   font-size: 20px;
-  padding-left: 20px;
   padding-top: 10px;
 }
 .entete {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-.fa-chart-line {
-  /*proprietes de l'icone graph*/
-  padding-right: 20px;
 }
 .location-pop {
   /*proprietes de la partie populaire*/
@@ -316,7 +307,7 @@ article {
   width: 100%;
   height: 15em;
   padding: 5px;
-  margin: 10px 0  50px 0;
+  margin: 10px 0  30px 0;
 }
 .img-pop {
   /*proprietes des images de la partie pop*/
