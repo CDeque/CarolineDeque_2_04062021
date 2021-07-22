@@ -190,7 +190,7 @@
 }
 /************************Resolution Tablette************************/
 
-@media only screen and (min-width: 600px) and (max-width: 1036px) {
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
   /***marges header***/
   .header {
     margin-left: 0px;
@@ -281,6 +281,9 @@
     width: 67%;
     height: 20em;
   }
+  .annonces-activites{
+    justify-content: space-around;
+  }
   .petitformat img,
   .grandformat img {
     height: 80%;
@@ -293,7 +296,7 @@
   }
   .grandformat {
     height: 18em;
-    width: 30%;
+    width: 31.3%;
     margin-top: 10px;
   }
   .titre-photo p {
