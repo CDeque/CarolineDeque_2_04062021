@@ -279,7 +279,7 @@ article {
 .text {
   /*alignement legendes des hotels*/
   flex-direction: column;
-  padding: 5px 15px;
+  padding: 0px 15px;
   margin: 0;
   font-size: 12px;
 }
